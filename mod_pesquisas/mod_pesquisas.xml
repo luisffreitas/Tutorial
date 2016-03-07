@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<extension type="module" version="3.4.7" method="upgrade">
+	<name>Pesquisas</name>
+	<author>Luis Freitas</author>
+	<version>1.0.0</version>
+	<description>Modulo de Pesquisas</description>
+	<files>
+		<filename>mod_pesquisas.xml</filename>
+		<filename module="mod_pesquisas">mod_pesquisas.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="email_config" label="Configuração do Email Contato">
+				<field name="sender_name" type="text" label="Nome do Remetente:"/>
+				<field name="sender_email" type="email" label="Email do Remetente:"/>
+				<field name="receiver_email" type="email" label="Email do Destinario:"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
